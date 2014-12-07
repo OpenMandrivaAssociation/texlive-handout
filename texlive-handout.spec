@@ -6,7 +6,7 @@
 # catalog-version 1.0.0
 Name:		texlive-handout
 Version:	1.0.0
-Release:	2
+Release:	3
 Summary:	Create handout for auditors of a talk
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/handout
