@@ -1,18 +1,12 @@
-# revision 34239
-# category Package
-# catalog-ctan /macros/latex/contrib/handout
-# catalog-date 2014-03-28 18:05:25 +0100
-# catalog-license lppl1.3
-# catalog-version 1.0.0
 Name:		texlive-handout
-Version:	1.6.0
-Release:	2
+Version:	43962
+Release:	1
 Summary:	Create handout for auditors of a talk
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/handout
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/handout.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/handout.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/handout.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/handout.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -27,12 +21,12 @@ the texts about which we will talk. The package supports
 preparation of such handouts when writing the talk.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -66,7 +60,7 @@ preparation of such handouts when writing the talk.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
