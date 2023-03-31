@@ -1,6 +1,6 @@
 Name:		texlive-handout
 Version:	43962
-Release:	1
+Release:	2
 Summary:	Create handout for auditors of a talk
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/handout
